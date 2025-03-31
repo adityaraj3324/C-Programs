@@ -1,0 +1,99 @@
+Q1. WAP to perform following operations.
+
+
+
+#include <stdio.h>
+
+int main() {
+
+    int a =34,b=78,c=23,d=6,e=45,f=2,g=56,h=12,i=13;
+    int result1 = a + b;
+    int result2 = c - d;
+    int result3 = e * f;
+    int result4 = g / f;
+    int result5 = e + b + c + h;
+    float result6 = g * a + h / f - i;
+
+    float a1=1.2,a2=6.7,a3=4.5,a4=1.6,a5=7.8,a6=1.5, a7=82, a8=5.6,a9= 1.234;
+    float  b1= 8,b2 =1, b3=4, b4=6,b5=3.4,b6=8.9,b7=1.67,b8=3.7,b9=6.21,c2=6.8,c3=157;
+    float result7 =  a1 * a2 - a3 / f;
+    float result8 = a4 * (h - f) / f + a5 - a6;
+    float result9 = a3 * a1 - (a7 / f) - a8 + a9;
+    float result10 = b1 * b2 + (b3 - f) / b2 + a8;
+    float result11 = b5 + a1 * (b8 - a1) / f + c2;
+    float result12 = b6 * b7 - (b9 - a8) + a5 - a + c3;
+
+    printf("a + b = %d\n", result1);
+    printf("c - d = %d\n", result2);
+    printf("e * f = %d\n", result3);
+    printf(" g / f = %d\n", result4);
+    printf("e + b + c + h = %d\n", result5);
+    printf("g * a + h / f - i = %f\n", result6);
+    printf("a1 * a2 - a3 / f = %f\n", result7);
+    printf("a4 * (h - f) / f + a5 - a6 = %f\n", result8);
+    printf("a3 * a1 - (a7 / f) - a8 + a9 = %f\n", result9);
+    printf("b1 * b2 + (b3 - f) / b2 + a8 = %f\n", result10);
+     printf("b5 + a1 * (b8 - a1) / f + c2 = %f\n", result11);
+      printf("b6 * b7 - (b9 - a8) + a5 - a + c3 = %f\n", result12);
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+Q2. WAP to print following: 
+
+#include <stdio.h>
+
+int main() {
+    
+    int a1 = 67;
+    int a2 = 12342;
+    int a3 = -32;
+
+    float b1 = 2.35;
+    float b2 = 4.56;
+    float b3 = 4.5;
+
+    char c1 = 'w';
+    char c2 = 'f';
+
+    printf("a1 = %d\n", a1);
+    printf("a2 = %d\n", a2);
+    printf("a3 = %d\n", a3);
+
+    printf("b1 = %f\n", b1);
+    printf("b2 = %f\n", b2);
+    printf("b3 = %f\n", b3);
+
+    printf("c1 = %c\n", c1);
+    printf("c2 = %c\n", c2);
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+Q3. WAP in C for swap two numbers without using third variable.
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two integers (a and b): ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------

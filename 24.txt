@@ -1,0 +1,365 @@
+Q1. table print 2 
+
+code: 
+
+#include<stdio.h>
+
+int main(){
+    int i=1;
+    printf("Table of 2 : ");
+    while(i<11){
+        printf("\n%d",i*2);
+        i++;
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+Q2. reverse number (342427)
+
+code: 
+
+#include <stdio.h>
+int main()
+{
+    int num=342427;
+    int rem,sum=0;
+    printf("Reverse number of 342427: ");
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+------------------------------------------------------------------------------------
+
+Q3. palindrome number
+
+code: 
+
+
+#include<stdio.h>
+int main()
+{
+    int num=1212121;
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);//12321(num =0)
+    if(sum == temp){
+        printf("\nthis number is palindrome");
+    }
+    else{
+        printf("this number is not palindrome");
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------
+
+Q4. Armstrong number (153)
+
+code:  
+
+
+#include <stdio.h>
+int main()
+{
+    int num=153;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("%d is Armstrong Number.",temp);
+    }
+    else{
+        printf("%d is Not Armstrong Number.",temp);
+    }
+    return 0;
+}
+
+
+------> 152
+
+#include <stdio.h>
+int main()
+{
+    int num=152;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("%d is Armstrong Number.",temp);
+    }
+    else{
+        printf("%d is Not Armstrong Number.",temp);
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------
+
+Q5. neon number
+
+code: 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter a number to find if it is neon or not: ");
+    scanf("%d",&a);
+    int num=a*a,rem,sum=0;
+    int temp =a;
+    while(num!=0){
+        rem = num%10;
+        sum= sum+rem;
+        num = num/10;
+        
+        
+    }if (sum==temp){
+        printf("%d is a neon number.",a);
+    }
+    else{
+        printf("%d is a not a neon number.",a);
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------------  
+Q6. starting point and ending point 
+eg :1 ---> 5 
+
+1 2 3 4 5 :square 
+1 4 9 16 25 
+
+code: 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("Enter a starting point to find squares: ");
+    scanf("%d",&a);
+    printf("Enter an ending point: ");
+    scanf("%d",&b);
+    printf("Squares: \n");
+    while(a<=b){
+        printf("%d : %d\n",a,a*a);
+        a++;
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------------
+Q7. a :	
+	input number 
+	then check a number is arsmtrong or not 
+
+p :
+	input number 
+	then check a number is pallindrome or not 
+
+t :
+	input number 
+	then check a number print table  
+
+e :
+	1-->10 even number ka sum 
+
+o :
+	34--->23 odd number ka sum 
+
+v :	vowel and consoant 
+
+g :	gender check 
+
+x :	tax calculator 
+	user input income tax pay 
+
+code:  
+
+
+/*a :	
+	input number 
+	then check a number is arsmtrong or not 
+
+p :
+	input number 
+	then check a number is pallindrome or not 
+
+t :
+	input number 
+	then check a number print table  
+
+e :
+	1-->10 even number ka sum 
+
+o :
+	34--->23 odd number ka sum 
+
+v :	vowel and consoant 
+
+g :	gender check 
+
+x :	tax calculator 
+	user input income tax pay */
+	
+#include<stdio.h>
+int main(){
+    char a;
+    printf("a. Armstrong.\np. Palindrome.\nt. Table.\ne. Even number sum.\no. odd number sum.\nv. vowel and consonant.\ng. Gender check.\nx. Tax calculator.\n ");
+    scanf("%c",&a);
+    if(a=='p'){
+         int num;
+         printf("Enter a number to find palindrome: ");
+         scanf("%d",&num);
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);//12321(num =0)
+    if(sum == temp){
+        printf("\nthis number is palindrome");
+    }
+    else{
+        printf("this number is not palindrome");
+    }
+    }
+    else if(a=='a'){
+         int num;
+           printf("Enter a number to find armstrong: ");
+         scanf("%d",&num);
+    int rem,sum=0;
+    int temp=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("%d is Armstrong Number.",temp);
+    }
+    else{
+        printf("%d is Not Armstrong Number.",temp);
+    }
+    }
+    else if(a=='t'){
+        int i=1;
+        printf("Enter any digit for a table: ");
+        int a;
+        scanf("%d",&a);
+    printf("Table of %d : \n",a);
+    while(i<11){
+        printf("\n%d X %d = %d",a,i,a*i);
+        i++;
+    }
+    }
+    else if(a=='e'){
+        printf("Sum of even numbers from 1 to 10: ");
+        int a=1,sum=0;
+        while(a<=10){
+            if(a%2==0){
+                sum = sum +a;
+            }
+            a++;
+        }
+        printf("%d",sum);
+    }
+    else if(a=='o'){
+        printf("Sum of odd numbers from 34 to 23: ");
+        int a=34,sum=0;
+        while(a>=23){
+            if(a%2!=0){
+                sum = sum +a;
+            }
+            a--;
+        }
+        printf("%d",sum);
+    }
+    else if(a=='v'){
+        char ch;
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("%c is a vowel.\n", ch);
+    } 
+    else {
+        printf("%c is a consonant.\n", ch);
+    }
+
+    }
+    else if(a=='g'){
+        
+	char ch;
+	printf("Enter your gender: ");
+	scanf(" %c",&ch);
+	if(ch == 'm' || ch == 'M'){
+		printf("You are a male");
+	}
+	else if(ch == 'f' || ch == 'F'){
+		printf("You are a female");
+	}
+	else{
+		printf("Invalid");
+	}
+    }
+    else if(a=='x'){
+        float salary, newSalary;
+
+    
+    printf("Enter your name: Aditya\n");
+    
+    printf("Enter your address: jaipur\n");
+    
+    printf("Enter your bank details: Central Bank of India\n");
+   
+    printf("Enter your income: ");
+    scanf("%f", &salary);
+
+
+    if (salary > 100000) {
+        newSalary = salary - (salary * 0.20);
+    } else if (salary > 75000) {
+        newSalary = salary - (salary * 0.15); 
+    } else if (salary > 50000) {
+        newSalary = salary - (salary * 0.10); 
+    } else if (salary > 30000) {
+        newSalary = salary - (salary * 0.05); 
+    } else {
+        newSalary = salary;
+    }
+
+    printf("\nName: Aditya\n");
+    printf("Address: jaipur\n");
+    printf("Bank Details: Central Bank of India\n");
+    printf("Original Salary: %f\n", salary);
+    printf("Salary after tax reduction: %f\n", newSalary);
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------

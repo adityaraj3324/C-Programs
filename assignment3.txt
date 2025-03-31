@@ -1,0 +1,222 @@
+Q1. WAP to perform following operations by taking input from user.
+
+
+
+#include <stdio.h>
+
+int main() {
+
+    int a,b,c,d,e,f,g,h,i;
+	printf("Enter integer values for a,b,c,d,e,f,g,h,i : ");
+	scanf("%d%d%d%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f,&g,&h,&i);
+    int result1 = a + b;
+    int result2 = c - d;
+    int result3 = e * f;
+    int result4 = g / f;
+    int result5 = e + b + c + h;
+    float result6 = g * a + h / f - i;
+
+    float a1,a2,a3,a4,a5,a6, a7, a8,a9;
+    float  b1,b2, b3, b4,b5,b6,b7,b8,b9,c2,c3;
+	printf("Enter decimal values for a1,a2,a3,a4,a5,a6,a7,a8,a9,b1,b2,b3,b4,b5,b6,b7,b8,b9,c2,c3 : ");
+	scanf("%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f",&a1,&a2,&a3,&a4,&a5,&a6, &a7, &a8,&a9,&b1,&b2, &b3, &b4,&b5,&b6,&b7,&b8,&b9,&c2,&c3);   
+    float result7 =  a1 * a2 - a3 / f;
+    float result8 = a4 * (h - f) / f + a5 - a6;
+    float result9 = a3 * a1 - (a7 / f) - a8 + a9;
+    float result10 = b1 * b2 + (b3 - f) / b2 + a8;
+    float result11 = b5 + a1 * (b8 - a1) / f + c2;
+    float result12 = b6 * b7 - (b9 - a8) + a5 - a + c3;
+
+    printf("a + b = %d\n", result1);
+    printf("c - d = %d\n", result2);
+    printf("e * f = %d\n", result3);
+    printf(" g / f = %d\n", result4);
+    printf("e + b + c + h = %d\n", result5);
+    printf("g * a + h / f - i = %f\n", result6);
+    printf("a1 * a2 - a3 / f = %f\n", result7);
+    printf("a4 * (h - f) / f + a5 - a6 = %f\n", result8);
+    printf("a3 * a1 - (a7 / f) - a8 + a9 = %f\n", result9);
+    printf("b1 * b2 + (b3 - f) / b2 + a8 = %f\n", result10);
+     printf("b5 + a1 * (b8 - a1) / f + c2 = %f\n", result11);
+      printf("b6 * b7 - (b9 - a8) + a5 - a + c3 = %f\n", result12);
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+Q2. WAP to print following by taking input from user: 
+
+#include<stdio.h>
+int main() {
+    
+    int a1 ;
+    int a2 ;
+    int a3 ;
+
+    float b1 ;
+    float b2 ;
+    float b3 ;
+
+    char c1 ;
+    char c2 ;
+
+    printf("Enter integer value for a1 = ");
+    scanf("%d",&a1);
+    printf("Enter integer value for a2 = ");
+    scanf("%d",&a2);
+    printf("Enter integer value for a3 = ");
+    scanf("%d",&a3);
+
+
+    printf("Enter decimal value for b1 = ");
+    scanf("%f",&b1);
+    printf("Enter decimal value for b2 = ");
+    scanf("%f",&b2);
+    printf("Enter decimal value for b3 = ");
+    scanf("%f",&b3);
+
+
+    printf("Enter char value for c1 = ");
+    scanf(" %c",&c1);
+    printf("Enter char value for c2 = ");
+    scanf(" %c",&c2);
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+Q3. WAP in C for swap two numbers using third variable.
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a, b,c;
+
+    printf("Enter two integers (a and b): ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+    c=a;
+    a=b;
+    b=c;
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Q4. WAP to take input a number and  check if whether it is greater than 10 or not.
+
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number > 10) {
+        printf("The number %d is greater than 10.\n", number);
+    } else {
+        printf("The number %d is not greater than 10.\n", number);
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+Q5. WAP to take input a number and  check if whether it is greater than 50 or not.
+
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number > 50) {
+        printf("The number %d is greater than 50.\n", number);
+    } else {
+        printf("The number %d is not greater than 50.\n", number);
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+Q6. WAP to take input a number and  check if whether it is greater than 67 or not.
+
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number > 67) {
+        printf("The number %d is greater than 67.\n", number);
+    } else {
+        printf("The number %d is not greater than 67.\n", number);
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+Q7. WAP to check whether a number is even or odd.
+
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2==0) {
+        printf("The number %d is even.\n", number);
+    } else {
+        printf("The number %d is odd.\n", number);
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+Q8. check a number is divisible by 5 or not
+
+
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 5==0) {
+        printf("The number %d is divisible by 5.\n", number);
+    } else {
+        printf("The number %d is not divisible by 5.\n", number);
+    }
+
+    return 0;
+}

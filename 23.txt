@@ -1,0 +1,859 @@
+Q1.  e :
+	even number check present or not 
+
+m :
+	marksheet 
+
+k :
+	input character 
+	keyboard line 
+	g :g is in mid line 
+
+c :
+	calculator 
+
+code : 
+
+
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    printf("Enter 'e' to check even number.\nSelect 'm' to generate marksheet.\nEnter 'c' for");
+    printf(" calculator.\nEnter 'k' for keyboard line character.");
+    scanf("%c",&a);
+    if(a=='k'){
+       char ch;
+
+    printf("Enter a char value: ");
+    scanf(" %c", &ch);
+
+    if (ch=='q'||ch=='w'||ch=='e'||ch=='r'||ch=='t'||ch=='y'||ch=='u'||ch=='i'||ch=='o'||ch=='p'){
+        printf("upper line");
+    } 
+    else if(ch=='a'||ch=='s'||ch=='d'||ch=='f'||ch=='g'||ch=='h'||ch=='j'||ch=='k'||ch=='l') {
+        printf("mid line");
+    }
+    else if(ch=='z'||ch=='x'||ch=='c'||ch=='v'||ch=='b'||ch=='n'||ch=='m') {
+        printf("lower line");
+    }
+    else {
+        printf("input is not valid ");
+    }
+    }
+    else if(a=='c'){
+     char ch;
+    
+    printf("enter 'a' for addition.\n");
+    printf("enter 's' for substraction.\n");
+    printf("enter 'd' for division.\n");
+    printf("enter 'm' for multiplication.\n");
+    scanf(" %c",&ch);
+    if(ch == 'a'){
+        int a,b,c,d;
+        printf("Enter any four int values for addition: ");
+        scanf("%d%d%d%d",&a,&b,&c,&d);
+        printf("Addition : %d",a+b+c+d);
+        
+    }
+    else if(ch == 's'){
+        int a,b;
+        printf("Enter any two int values for substraction: ");
+        scanf("%d%d",&a,&b);
+        printf("substraction : %d",a-b);
+        
+    }
+    
+    else if(ch == 'm'){
+        int a,b;
+        printf("Enter any two int values for multiplication: ");
+        scanf("%d%d",&a,&b);
+        printf("Multiplication : %d",a*b);
+        
+    }
+    else if(ch == 'd'){
+        int a,b;
+        printf("Enter any two int values for division: ");
+        scanf("%d%d",&a,&b);
+        printf("division : %d",a/b);
+        
+    }
+    
+    else{
+        printf("Invalid");
+    }
+    }
+    else if(a=='m'){
+            int rollNo;
+            int physics, chemistry, maths;
+            int total;
+            float percentage;
+            char division;
+
+    printf("Input the Roll Number of the student: ");
+    scanf("%d", &rollNo);
+
+    printf("Student Name: Aditya Sahu\n");
+   
+    printf("Father's Name: Vinod Kumar Sahu\n");
+    
+    printf("Mother's Name: Sunita Devi Sahu\n");
+
+    printf("Address: Jaipur\n");
+    
+    printf("Contact: 9999999999\n");
+    
+    printf("Input the marks of Physics: ");
+    scanf("%d", &physics);
+
+    printf("Input the marks of Chemistry: ");
+    scanf("%d", &chemistry);
+
+    printf("Input the marks of Maths: ");
+    scanf("%d", &maths);
+
+    total = physics + chemistry + maths;
+    percentage = total / 3.0;
+
+    
+    if (percentage >= 60) {
+        division='A';
+    } else if (percentage >= 50) {
+        division='B';
+    } else if (percentage >= 40) {
+        division='C';
+    } else {
+        division='F';
+    }
+
+    printf("\nTotal marks: %d\n", total);
+    printf("Percentage: %f\n", percentage);
+    printf("Division: %c\n",division);
+   }
+
+    
+    else if (a=='e'){
+        int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2==0) {
+        printf("The number %d is even.\n", number);
+    } else {
+        printf("The number %d is odd.\n", number);
+    }
+        
+    }
+    else{
+        printf("Invalid");
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+Q2. 
+
+1--->10 print :laptop 
+	(dry run ) copy 
+
+1--->100 print 
+
+50--->100
+
+34--->89 
+
+10--->1 print :laptop 
+	(dry run ) copy 
+
+100---1
+
+100---50
+
+89---34 
+
+code : 
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=10){
+        printf("%d ",a);
+        a++;
+    }
+    while(a<=100){
+        printf("%d ",a);
+        a++;
+     }
+
+    return 0;
+}
+
+-----------------------------------------------------------------------
+
+Q3.  -->50----->100
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=50;
+    while(a<=100){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+----------------------------------------------------------------------------
+
+Q4.  --->34----->89
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=34;
+    while(a<=89){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+-----------------------------------------------------------------------------------
+
+Q5. -->10------->1
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=10;
+    while(a>=1){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+------------------------------------------------------------------------------------
+
+Q6. -->100------->1
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=1){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------
+
+Q7. -->100-------->50
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=50){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+---------------------------------------------------------------------------------
+
+Q8. -->89-----34
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=89;
+    while(a>=34){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+------------------------------------------------------------------------------------------
+Q9. even number :
+
+1--->10 print :laptop 
+	(dry run ) copy 
+
+1--->100 print 
+
+50--->100
+
+34--->89 
+
+10--->1 print :laptop 
+	(dry run ) copy 
+
+100---1
+
+100---50
+
+89---34 
+
+
+code: 
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=10){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+
+Q10. -->1-------100
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=100){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------------------
+
+
+Q11. -->50------100
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=50;
+    while(a<=100){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------
+
+
+Q12.  -->34---------89
+
+#include <stdio.h>
+
+int main()
+{
+    int a=34;
+    while(a<=89){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+
+Q13. -->10-------1
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=10;
+    while(a>=1){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+
+
+Q14. -->100----------1
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=1){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------
+
+
+Q15. -->100-------50
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=50){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------
+
+
+Q16. -->89--------34
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=89;
+    while(a>=34){
+       if(a%2==0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+Q17. odd number :
+1--->10 print :laptop 
+	(dry run ) copy 
+
+1--->100 print 
+
+50--->100
+
+34--->89 
+
+10--->1 print :laptop 
+	(dry run ) copy 
+
+100---1
+
+100---50
+
+89---34 
+
+code: 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=10){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+------------------------------------------------------------------------------
+
+
+Q18. -->1--------100
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=100){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+
+Q19. -->50-------100
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=50;
+    while(a<=100){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+
+Q20. -->34---------89
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=34;
+    while(a<=89){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a++;
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------
+
+
+Q21. -->10--------1
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=10;
+    while(a>=1){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+
+
+Q22. -->100---------1
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=1){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+Q23. -->100--------50
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=50){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+Q24.  -->89------34
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=89;
+    while(a>=34){
+       if(a%2!=0){
+            printf("%d ",a);
+       }
+        a--;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------
+
+Q25. sum of all the numbers :
+
+1--->10 print :laptop 
+	(dry run ) copy 
+
+1--->100 print 
+
+50--->100
+
+34--->89 
+
+code:  
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    int sum=0;
+    while(a<=10){
+       sum=sum+a; 
+       a++;
+    }
+      printf("%d ",a);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+
+
+Q26. -->1------100
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    int sum=0;
+    while(a<=100){
+       sum=sum+a; 
+       a++;
+    }
+      printf("%d ",a);
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------
+
+
+Q27. -->50-----100
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=50;
+    int sum=0;
+    while(a<=100){
+       sum=sum+a; 
+       a++;
+    }
+      printf("%d ",a);
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------
+
+
+Q28.  -->34-----89
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=34;
+    int sum=0;
+    while(a<=89){
+       sum=sum+a; 
+       a++;
+    }
+      printf("%d ",a);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+Q29. sum of all even number (1---10 ) with dry run
+
+
+code: 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    int sum=0;
+    while(a>=10){
+           if(a%2==0){
+           sum=sum+a; 
+           }
+       a++;
+    }
+      printf("%d ",a);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+Q30.  sum of all odd number (100---50 )  
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    int sum=0;
+    while(a<=50){
+           if(a%2!=0){
+           sum=sum+a; 
+           }
+       a--;
+    }
+      printf("%d ",a);
+
+    return 0;
+}
+
+-------------------------------------
+Q31. user input number count digits 
+
+
+64737 :5 (dry run )
+
+
+code: 
+
+
+#include <stdio.h>
+int main()
+{
+   int num=64737;
+   int count=0;
+   while(num>0){
+      num=num/10;
+      count++;
+   }
+   printf("%d",count);
+    return 0;
+}
+
+
+-------------------------------------------------------
+
+
+Q32.  sum of all the digits 
+
+64737 :5 (dry run )
+
+
+
+#include <stdio.h>
+int main()
+{
+   int num=64737;
+   int count=0;
+   int sum=0;
+   while(num>0){
+      num=num/10;
+      sum=sum+num;
+     count++;
+
+   }
+   printf("%d",count);
+   printf("%d",sum);
+
+    return 0;
+}
+
+-----------------------------------------------------------

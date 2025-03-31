@@ -1,0 +1,894 @@
+Q1.  WAP in C to check valid input.
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    
+    printf("enter any char: ");
+    scanf(" %c",&ch);
+    if(ch == 'a'){
+        printf("apple");
+        
+    }
+     else if(ch == 'b'){
+        printf("ball");
+        
+    }
+    else{
+        printf("Invalid");
+    }
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------
+Q2. calculator using if-else statement.
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    
+    printf("enter 'a' for addition.\n");
+    printf("enter 's' for substraction.\n");
+    printf("enter 'd' for division.\n");
+    printf("enter 'm' for multiplication.\n");
+    printf("enter 'o' for modular.\n");
+    scanf(" %c",&ch);
+    if(ch == 'a'){
+        int a,b,c,d;
+        printf("Enter any four int values for addition: ");
+        scanf("%d%d%d%d",&a,&b,&c,&d);
+        printf("Addition : %d",a+b+c+d);
+        
+    }
+    else if(ch == 's'){
+        int a,b;
+        printf("Enter any two int values for substraction: ");
+        scanf("%d%d",&a,&b);
+        printf("substraction : %d",a-b);
+        
+    }
+    
+    else if(ch == 'm'){
+        int a,b;
+        printf("Enter any two int values for multiplication: ");
+        scanf("%d%d",&a,&b);
+        printf("Multiplication : %d",a*b);
+        
+    }
+    else if(ch == 'd'){
+        int a,b;
+        printf("Enter any two int values for division: ");
+        scanf("%d%d",&a,&b);
+        printf("division : %d",a/b);
+        
+    }
+    
+    else if(ch == 'o'){
+        int a,b;
+        printf("Enter any two int values for modular: ");
+        scanf("%d%d",&a,&b);
+        printf("modular : %d",a%b);
+        
+    }
+    else{
+        printf("Invalid");
+    }
+
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------
+
+Q3. WAP in c for swapping.
+
+#include<stdio.h>
+
+int main() {
+    int a, b;
+    char c;
+    printf("Enter 'w' for swapping with third variable and 's' for without using third variable: ");
+    scanf("%c",&c);
+    if(c=='s'){
+    printf("Enter two integers (a and b): ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+    }
+    else if(c=='w'){
+         printf("Enter two integers (a and b): ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+     c=a;
+     a=b;
+     b=c;
+    printf("After swapping: a = %d, b = %d\n", a, b);
+        
+    }
+    else{
+        printf("Invalid");
+        
+    }
+    return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Q4. Divisible by both 5 & 2.
+
+
+#include<stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 5==0 && number %2==0) {
+        printf("The number %d is divisible by both 5 and 2.\n", number);
+    } else {
+        printf("The number %d is not divisible by both 5 and 2.\n", number);
+    }
+
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Q5. Divisible by both 6 & 8.
+
+
+#include<stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 6==0 && number % 8==0) {
+        printf("The number %d is divisible by both 6 and 8.\n", number);
+    } else {
+        printf("The number %d is not divisible by both 6 and 8.\n", number);
+    }
+
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Q6. Divisible by both 7 & 3.
+
+
+#include<stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 7==0 && number % 3==0) {
+        printf("The number %d is divisible by both 7 and 3.\n", number);
+    } else {
+        printf("The number %d is not divisible by both 7 and 3.\n", number);
+    }
+
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Q7. Divisible by 5 or 2.
+
+
+#include<stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 5==0 || number % 2==0) {
+        printf("The number %d is divisible by 5 or 2.\n", number);
+    } else {
+        printf("The number %d is not divisible by 5 or 2.\n", number);
+    }
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------
+Q8. vowel and consonant 
+
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("%c is a vowel.\n", ch);
+    } 
+    else {
+        printf("%c is a consonant.\n", ch);
+    }
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------
+
+Q9. 1 :one 
+2 :two
+3 :three
+4 :four 
+5 :five 
+input is not valid
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a;
+
+    printf("Enter a int value: ");
+    scanf("%d", &a);
+
+    if (a==1){
+        printf("one.\n");
+    } 
+    else if(a==2) {
+        printf("two.\n");
+    }
+    else if(a==3) {
+        printf("three.\n");
+    }
+    else if(a==4) {
+        printf("four.\n");
+    }
+    else if(a==5) {
+        printf("five.\n");
+    }
+    else {
+        printf("input is not valid ");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------
+Q10.  q,w,e,r,t,y,u,i,o,p :upper line 
+
+a,s,d,f,g,h,j,k,l :mid line 
+
+z,x,c,v,b,n,m :lower line 
+
+ input is not valid
+
+#include <stdio.h>
+
+int main() {
+char ch;
+
+    printf("Enter a char value: ");
+    scanf("%c", &ch);
+
+    if (ch=='q'||ch=='w'||ch=='e'||ch=='r'||ch=='t'||ch=='y'||ch=='u'||ch=='i'||ch=='o'||ch=='p'){
+        printf("upper line");
+    } 
+    else if(ch=='a'||ch=='s'||ch=='d'||ch=='f'||ch=='g'||ch=='h'||ch=='j'||ch=='k'||ch=='l') {
+        printf("mid line");
+    }
+    else if(ch=='z'||ch=='x'||ch=='c'||ch=='v'||ch=='b'||ch=='n'||ch=='m') {
+        printf("lower line");
+    }
+    else {
+        printf("input is not valid ");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------
+Q11. input one number 
+check number 2 :divisible by 2 
+check number 3 :divisible by 3
+check number 4 :divisible by 4 
+check number 5 :divisible by 5
+check number 6 :divisible by 6 
+
+  input is not valid 
+
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    
+    scanf("%d", &number);
+       
+    if (number == 2) {
+        printf("The number %d is divisible by 2.\n", number);
+    } else if (number % 3 == 0) {
+        printf("The number %d is divisible by 3.\n", number);
+    } else if (number % 4 == 0) {
+        printf("The number %d is divisible by 4.\n", number);
+    } else if (number % 5 == 0) {
+        printf("The number %d is divisible by 5.\n", number);
+    } else if (number % 6 == 0) {
+        printf("The number %d is divisible by 6.\n", number);
+    } else {
+        printf("Input is not valid.\n");
+    }
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q12. input one number 
+check number :
+	5 and 9 both divide 
+	4 and 2 anyone divide
+	8 and 7 anyone divide
+	9 and 6 both divide 
+  input is not valid 
+
+
+
+#include<stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 5==0 && number % 9==0) {
+        printf("The number %d is divisible by both 5 and 9.\n", number);
+    }
+    else if (number % 9==0 && number % 6==0) {
+        printf("The number %d is divisible by both 9 and 6.\n", number);
+    } 
+    else if (number % 4==0 || number % 2==0) {
+        printf("The number %d is divisible by 4 or 2.\n", number);
+    } 
+    else if (number % 8==0 || number % 7==0) {
+        printf("The number %d is divisible by 8 or 7.\n", number);
+    } 
+    
+    else {
+        printf("Invalid");
+    }
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q13. input one number 
+1--->10 between 
+11--->20
+21-->30
+34--->89 
+456--->789
+
+
+
+#include<stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number>=1 && number <= 10) {
+        printf("The number %d is bewtween 1 and 10.\n", number);
+    }
+    else if (number>=11 && number <= 20) {
+        printf("The number %d is bewtween 11 and 20.\n", number);
+    } 
+    else if (number>=21 && number <= 30) {
+        printf("The number %d is bewtween 21 and 30.\n", number);
+    } 
+    else if (number>=34 && number <= 89) {
+        printf("The number %d is bewtween 34 and 89.\n", number);
+    } 
+    else if(number>=456 && number <= 789) {
+        printf("The number %d is bewtween 456 and 789.\n", number);
+    }
+    else {
+        printf("Invalid");
+    }
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q14. input age and check a user is valid for vote or not 
+
+
+#include <stdio.h>
+
+int main() {
+    int age;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (age >= 18) {
+        printf("You are eligible to vote.\n");
+    } else {
+        printf("You are not eligible to vote.\n");
+    }
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------
+
+Q15. m and M :male 
+f and F :female 
+input is not valid
+
+#include<stdio.h>
+
+int main(){
+	char ch;
+	printf("Enter your gender: ");
+	scanf("%c",&ch);
+	if(ch == 'm' || ch == 'M'){
+		printf("You are a male");
+	}
+	else if(ch == 'f' || ch == 'F'){
+		printf("You are a female");
+	}
+	else{
+		printf("Invalid");
+	}
+        return 0;
+}
+
+Q16. C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A
+
+
+#include <stdio.h>
+
+int main() {
+    int mark1, mark2, mark3, mark4, mark5;
+    int totalMarks;
+    float percentage;
+    char grade;
+
+    printf("Enter marks for 5 subjects (out of 100):\n");
+    
+    printf("Subject 1: ");
+    scanf("%d", &mark1);
+
+    printf("Subject 2: ");
+    scanf("%d", &mark2);
+
+    printf("Subject 3: ");
+    scanf("%d", &mark3);
+
+    printf("Subject 4: ");
+    scanf("%d", &mark4);
+
+    printf("Subject 5: ");
+    scanf("%d", &mark5);
+
+    totalMarks = mark1 + mark2 + mark3 + mark4 + mark5;
+    percentage = totalMarks / 5.0;
+
+    if (percentage < 25) {
+        grade = 'F';
+    } else if (percentage >=25 && percentage <45) {
+        grade = 'E';
+    } else if (percentage >= 45 && percentage < 50) {
+        grade = 'D';
+    } else if (percentage >= 50 && percentage < 60) {
+        grade = 'C';
+    } else if (percentage >= 60 && percentage < 80) {
+        grade = 'B';
+    } else {
+        grade = 'A';
+    }
+
+    
+    printf("Total Percentage: %f\n", percentage);
+    printf("Grade: %c\n", grade);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------
+
+Q17. Write a C program to read the roll no, name,fnname and marks of three subjects and calculate the total,
+percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+student name : 
+fname:
+mname:
+address:
+contact:
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+total: 
+precentage : % 
+division: 
+
+#include <stdio.h>
+
+int main() {
+    int rollNo;
+    int physics, chemistry, maths;
+    int total;
+    float percentage;
+    char division;
+
+    printf("Input the Roll Number of the student: ");
+    scanf("%d", &rollNo);
+
+    printf("Student Name: Aditya Sahu\n");
+   
+    printf("Father's Name: Vinod Kumar Sahu\n");
+    
+    printf("Mother's Name: Sunita Devi Sahu\n");
+
+    printf("Address: Jaipur\n");
+    
+    printf("Contact: 9999999999\n");
+    
+    printf("Input the marks of Physics: ");
+    scanf("%d", &physics);
+
+    printf("Input the marks of Chemistry: ");
+    scanf("%d", &chemistry);
+
+    printf("Input the marks of Maths: ");
+    scanf("%d", &maths);
+
+    total = physics + chemistry + maths;
+    percentage = total / 3.0;
+
+    
+    if (percentage >= 60) {
+        division='A';
+    } else if (percentage >= 50) {
+        division='B';
+    } else if (percentage >= 40) {
+        division='C';
+    } else {
+        division='F';
+    }
+
+    printf("\nTotal marks: %d\n", total);
+    printf("Percentage: %f%percentage);
+    printf("Division: %c\n",division);
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------
+
+Q18. salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays s
+
+#include <stdio.h>
+
+int main() {
+    float salary, newSalary;
+    int holidays;
+
+    
+    printf("Enter your name: Aditya\n");
+    
+    printf("Enter your address: jaipur\n");
+    
+    printf("Enter your bank details: Central Bank of India\n");
+   
+    printf("Enter your salary: ");
+    scanf("%f", &salary);
+
+    printf("Enter the number of holidays: ");
+    scanf("%d", &holidays);
+
+    if (holidays == 1) {
+        newSalary = salary;
+    } else if (holidays >= 2 && holidays <= 5) {
+        newSalary = salary * 0.95; 
+    } else if (holidays >= 6 && holidays <= 14) {
+        newSalary = salary * 0.90; 
+    } else if (holidays == 15) {
+        newSalary = salary * 0.50; 
+    } else {
+        newSalary = 0;
+    }
+
+    printf("\nName: Aditya\n");
+    printf("Address: jaipur\n");
+    printf("Bank Details: Central Bank of India\n");
+    printf("Original Salary: %f\n", salary);
+    printf("Alloted Salary: %f\n", newSalary);
+    printf("Holidays: %d\n", holidays);
+	return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Q19.  electric city bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+
+output : 
+name:
+unit :3 
+amout 30 
+discout : 10% 
+total pay amount : 
+
+#include <stdio.h>
+
+int main() {
+
+    int units;
+    float amount, discount = 0, totalAmount;
+    int discountPercent = 0;
+
+    printf("Enter your name: Aditya\n");
+    
+    printf("Enter the number of units used: ");
+    scanf("%d", &units);
+
+    
+    amount = units * 10; 
+
+    if (units >= 1 && units <= 10) {
+        discountPercent = 10;
+        discount = 0.10 * amount;
+    } else if (units >= 11 && units <= 20) {
+        discountPercent = 15;
+        discount = 0.15 * amount;
+    } else if (units >= 21 && units <= 40) {
+        discountPercent = 30;
+        discount = 0.30 * amount;
+    } else if (units == 50) {
+        discountPercent = 50;
+        discount = 0.50 * amount;
+    }
+
+    totalAmount = amount - discount;
+
+    printf("\nName: Aditya\n");
+    printf("Units: %d\n", units);
+    printf("Amount: %f\n", amount);
+    printf("Discount: %d% \n", discountPercent);
+    printf("Total Pay Amount: %f\n", totalAmount);
+
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------
+
+Q20.  C program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+celsius 
+f---->c 
+fahrenheit
+c---f 
+
+
+#include <stdio.h>
+
+int main() {
+    int choice;
+    float temp, cTemp;
+    printf("Temperature Conversion Menu:\n");
+    printf("1. Convert Fahrenheit to Celsius\n");
+    printf("2. Convert Celsius to Fahrenheit\n");
+    printf("Enter your choice (1 or 2): ");
+    scanf("%d", &choice);
+    
+    if (choice == 1) {
+    
+        printf("Enter temperature in Fahrenheit: ");
+        scanf("%f", &temp);
+        cTemp = (temp - 32) * 5.0 / 9.0;
+        printf("%f Fahrenheit is equal to %f Celsius.\n", temp, cTemp);
+    } else if (choice == 2) {
+       
+        printf("Enter temperature in Celsius: ");
+        scanf("%f", &temp);
+        cTemp = (temp * 9.0 / 5.0) + 32;
+        printf("%f Celsius is equal to %f Fahrenheit.\n", temp, cTemp);
+    } else {
+        printf("Invalid choice! Please run the program again and select 1 or 2.\n");
+    }
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------
+
+Q21.  Check whether the trainge , square , reactanlge (area & volume)
+->input area /volume 
+area 
+traingle square rectangle 
+square
+
+
+#include <stdio.h>
+
+int main() {
+    int choice;
+    float base, height, side, length, breadth, area;
+
+    printf("Area Calculation Menu:\n");
+    printf("1. Triangle\n");
+    printf("2. Square\n");
+    printf("3. Rectangle\n");
+    printf("Enter your choice (1, 2, or 3): ");
+    scanf("%d", &choice);
+
+    
+    if (choice == 1) {
+        
+        printf("Enter base of the triangle: ");
+        scanf("%f", &base);
+        printf("Enter height of the triangle: ");
+        scanf("%f", &height);
+        area = 0.5 * base * height;
+        printf("The area of the triangle is: %f\n", area);
+    } else if (choice == 2) {
+       
+        printf("Enter side of the square: ");
+        scanf("%f", &side);
+        area = side * side;
+        printf("The area of the square is: %f\n", area);
+    } else if (choice == 3) {
+        printf("Enter length of the rectangle: ");
+        scanf("%f", &length);
+        printf("Enter breadth of the rectangle: ");
+        scanf("%f", &breadth);
+        area = length * breadth;
+        printf("The area of the rectangle is: %f\n", area);
+    } else {
+        printf("Invalid choice! Please run the program again and select 1, 2, or 3.\n");
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------
+
+Q22.  a : 
+	input character :alphabets (a---d) 
+
+c :
+	input character 
+	a :addition
+	s :substraction
+	m :multiplication
+	d :division 
+	
+	
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    printf("Enter 'a' for alphabets.\nEnter 'c' for calculator.\n");
+    scanf("%c",&a);
+    if(a=='a'){
+        char ab;
+        printf("Select a, b, c or d : ");
+        scanf(" %c",&ab);
+        if(ab == 'a'){
+            printf("Apple");
+        }
+        else if(ab == 'b'){
+            printf("Ball");
+        }
+        else if(ab == 'c'){
+            printf("Cat");
+        }  
+        else if(ab == 'd'){
+            printf("Dog");
+        }
+    }
+    else if(a=='c'){
+     char ch;
+    
+    printf("enter 'a' for addition.\n");
+    printf("enter 's' for substraction.\n");
+    printf("enter 'd' for division.\n");
+    printf("enter 'm' for multiplication.\n");
+    scanf(" %c",&ch);
+    if(ch == 'a'){
+        int a,b,c,d;
+        printf("Enter any four int values for addition: ");
+        scanf("%d%d%d%d",&a,&b,&c,&d);
+        printf("Addition : %d",a+b+c+d);
+        
+    }
+    else if(ch == 's'){
+        int a,b;
+        printf("Enter any two int values for substraction: ");
+        scanf("%d%d",&a,&b);
+        printf("substraction : %d",a-b);
+        
+    }
+    
+    else if(ch == 'm'){
+        int a,b;
+        printf("Enter any two int values for multiplication: ");
+        scanf("%d%d",&a,&b);
+        printf("Multiplication : %d",a*b);
+        
+    }
+    else if(ch == 'd'){
+        int a,b;
+        printf("Enter any two int values for division: ");
+        scanf("%d%d",&a,&b);
+        printf("division : %d",a/b);
+        
+    }
+    
+    else{
+        printf("Invalid");
+    }
+    }
+    else{
+        printf("Invalid");
+    }
+
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
